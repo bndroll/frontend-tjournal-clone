@@ -1,15 +1,16 @@
-import Head from 'next/head'
-import Paper from "@material-ui/core/Paper"
+import {Post} from '../components/Post/Post'
+import {MainLayout} from '../layouts/MainLayout'
+
 
 export default function Home() {
     return (
-        <div>
-            <Head>
-                <title>TJournal Clone</title>
-            </Head>
-            <Paper>
-                qwe
-            </Paper>
-        </div>
+        <MainLayout>
+            <Post/>
+            <Post/>
+            <Post/>
+            <Post/>
+            <Post/>
+            <Post/>
+        </MainLayout>
     )
 }

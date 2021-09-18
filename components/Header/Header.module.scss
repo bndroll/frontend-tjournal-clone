@@ -1,0 +1,109 @@
+.root {
+    position: fixed;
+    z-index: 1;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 100%;
+    height: 60px;
+
+    padding: 0 35px 0 10px;
+    margin-bottom: 14px;
+
+    background-color: #fff4e2 !important;
+}
+
+.logo {
+    width: 32px;
+    height: 42px;
+
+    margin-right: 25px;
+    margin-left: 10px;
+}
+
+.avatar {
+    margin-left: 15px;
+    margin-right: 6px;
+
+    border-radius: 20% !important;
+}
+
+.penButton {
+    min-width: 40px !important;
+
+    background-color: #ffffff !important;
+    color: #111111 !important;
+
+    text-transform: inherit !important;
+    font-size: 16px !important;
+    letter-spacing: 0 !important;
+
+    transition: background-color .2s linear, color .2s linear !important;
+
+    &:hover {
+        background-color: #111111 !important;
+        color: #ffffff !important;
+    }
+}
+
+.searchBlock {
+    position: relative;
+
+    margin-right: 15px;
+
+    width: 310px;
+
+    svg {
+        position: absolute;
+        top: 8px;
+        left: 10px;
+
+        opacity: 0.3;
+    }
+
+    input {
+        width: 100%;
+        height: 40px;
+
+        border-radius: 10px;
+        border: 1px solid transparent;
+        background-color: rgba(0, 0, 0, 0.05);
+
+        font-size: 16px;
+
+        padding-left: 40px;
+
+        transition: background-color .2s linear, border-color .2s linear, box-shadow .2s linear;
+
+        &:hover, &:focus {
+            background-color: #fff;
+            border-color: darken(#fff4e2, 15%);
+            box-shadow: 0 0 0 3px rgb(299 160 64 / 12%);
+        }
+    }
+}
+
+.loginButton {
+    display: flex;
+    align-items: center;
+
+    font-size: 16px;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.55);
+
+    margin-left: 15px;
+
+    cursor: pointer;
+
+    transition: color .2s linear;
+
+    svg {
+        margin-right: 10px;
+    }
+
+    &:hover {
+        color: #000000;
+    }
+}
